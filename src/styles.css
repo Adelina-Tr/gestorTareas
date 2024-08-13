@@ -1,6 +1,6 @@
-/* estilos generales */
-body{
-    font-family: arial, sans-serif;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -8,31 +8,33 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
-/* estilos para el contenedor principal*/
-#app{
+
+/* Estilos para el contenedor principal */
+#app {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/*estilos para el formulario*/
-form{
+/* Estilos para el formulario */
+form {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
-/* estilos al input*/
-input{
+
+/* Estilos al input */
+input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
-/*estilos al boton*/
-button{
+
+/* Estilos al botón */
+button {
     padding: 5px 8px;
     background-color: #007bff;
     color: white;
@@ -40,14 +42,16 @@ button{
     border-radius: 3px;
     cursor: pointer;
 }
-/* estilos de la lista*/
+
+/* Estilos de la lista */
 ul {
     list-style: none;
     padding: 0;
 }
-/* estilos a los elementos de la lista*/
+
+/* Estilos a los elementos de la lista */
 li {
-    background-image: #f4f4f4;
+    background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ddd;
     margin-top: 10px;
@@ -55,8 +59,9 @@ li {
     align-items: center;
     justify-content: space-between;
 }
-/* estilos para cuando una tarea esta completa*/
+
+/* Estilos para cuando una tarea está completada */
 li.completed {
     text-decoration: line-through;
-  color:#888;
+    color: #888;
 }

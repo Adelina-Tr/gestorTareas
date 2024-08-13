@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports={
+    mode: 'development',
     entry: './src/index.js',//punto de entrada de tu aplicacion (usar el index como archivo principal)
     output: {
         filename: 'bundle.js', //Nombre de archivo de salida (nombre de la cajta de fiesta)
@@ -26,7 +27,9 @@ module.exports={
     },
     devtool: 'source-map', //Generar source maps para facilitar la depuracion
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'), //Carpeta desde donde obtenemos los archivos que mostramos al usuario
+        static:{
+            directory: path.resolve(__dirname,'dist'),
+        },
         compress: true, //Habilitando compresion gzip
         port: 9000, //Puerto del servidor de desarrollo
     }
